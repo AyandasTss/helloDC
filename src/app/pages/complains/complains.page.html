@@ -1,0 +1,450 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Complains</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="notification" (click)="onClick()">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+        <ion-badge>99</ion-badge>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="flex-full complains" >
+  <div class="search">
+    <ion-searchbar animated></ion-searchbar>
+  </div> 
+
+
+  <!-- Complaints slider -->
+
+  <div class="slider">
+    <h2>Recent Complains</h2>
+    <ion-slides [options]="option" >
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Damaged Road</ion-card-title>
+            <ion-card-subtitle class="pending">Pending</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="desc">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quo!</p>
+            </div>
+            <div class="action">
+              <a href="#" >View Details</a>
+              
+              <button >
+                Contact 
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+                
+              </button>
+            </div>
+            
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Damaged Road</ion-card-title>
+            <ion-card-subtitle class="complete">Completed</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="desc">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quo!</p>
+            </div>
+            <div class="action">
+              <a href="#" >View Details</a>
+              
+              <button >
+                Rate It 
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+                
+              </button>
+            </div>
+            
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Damaged Road</ion-card-title>
+            <ion-card-subtitle class="active">Active</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="desc">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quo!</p>
+            </div>
+            <div class="action">
+              <a href="#" >View Details</a>
+              
+              <button >
+                See Status
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+                
+              </button>
+            </div>
+            
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Damaged Road</ion-card-title>
+            <ion-card-subtitle class="processing">Processing</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="desc">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quo!</p>
+            </div>
+            <div class="action">
+              <a href="#" >View Details</a>
+              
+              <button >
+                View Process 
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+                
+              </button>
+            </div>
+            
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Damaged Road</ion-card-title>
+            <ion-card-subtitle class="cancled">Canceled</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="desc">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quo!</p>
+            </div>
+            <div class="action">
+              <a href="#" >View Details</a>
+              
+              <button >
+                Reasigne 
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+                
+              </button>
+            </div>
+            
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      
+
+
+    
+
+
+
+
+
+    </ion-slides>
+  </div>
+
+  <section class="complaints">
+      <!-- Basic -->
+  <ion-accordion-group value="Active">
+    <ion-accordion value="Active">
+      <ion-item slot="header">
+        <ion-label>Active</ion-label>
+      </ion-item>
+
+      <ion-list slot="content">
+        <ion-item>
+          <ion-label>
+            
+            <h4>Damaged Road</h4>
+            <div class="action">
+              <button (click)="view()">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            
+            <h4>Eleticity Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            
+            <h4>Water Supply Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+        
+      </ion-list>
+    </ion-accordion>
+    <ion-accordion >
+      <ion-item slot="header">
+        <ion-label>Completed</ion-label>
+      </ion-item>
+
+      <ion-list slot="content">
+        <ion-item>
+          <ion-label>
+            
+            <h4>Park Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            
+            <h4>Land Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            
+            <h4>Eleticity Theft Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            
+            <h4>Ambulance Service Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>        
+
+      </ion-list>
+    </ion-accordion>
+    <ion-accordion >
+      <ion-item slot="header">
+        <ion-label>All Complains</ion-label>
+      </ion-item>
+
+      <ion-list slot="content">
+        <ion-item>
+          <ion-label>
+            
+            <h4>Damaged Road</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            
+            <h4>Eleticity Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            
+            <h4>Water Supply Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            
+            <h4>Park Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            
+            <h4>Land Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            
+            <h4>Eleticity Theft Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            
+            <h4>Ambulance Service Issue</h4>
+            <div class="action">
+              <button>
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+              <button>
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </ion-label>
+        </ion-item> 
+
+
+      </ion-list>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  </section>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+</ion-content>

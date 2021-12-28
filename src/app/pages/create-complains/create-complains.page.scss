@@ -1,0 +1,168 @@
+ion-toolbar{
+    --background: var(--custom-accent1);
+    
+}
+.full-flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create{
+    .register-form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .form-header{
+            width: 100%;
+            height: 10vh;
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .user-img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin: 0 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--custom-secondary);
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+
+                }
+
+            }
+            .user-name{
+                height: 60px;
+                h4{
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 0.2;
+                    color: var(--custom-primary);
+                }
+                select{
+                    width: 80px;
+                    font-size: 14px;
+                    background-color: transparent;
+                    border: 0.5px solid var(--custom-accent1);
+                    
+                    border-radius: 5px;
+                    margin-top: 0.5rem;
+                    text-overflow: ellipsis;
+                    outline: none;
+
+
+                    option{
+                        font-size: 12px;
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+
+        }
+        .form-content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .text-area{
+                width: 100%;
+                height: 100%;
+                margin: 0.5rem;
+
+                // background-color: red;
+
+                ion-input,ion-textarea{
+                    width: 95%;
+                    margin: auto;
+                    border: 1px solid transparent;
+                    
+                    &:focus-within{
+                        color: var(--ion-color-dark);
+                        border-color: var(--custom-accent1);
+                    }
+                    
+
+                }
+                ion-textarea{
+                    height: 100%;
+                }
+
+            }
+
+            .buttons{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 1rem;
+                box-shadow: 1px 0 1px var(--ion-color-dark);
+                button{
+                    width: 100%;
+                    height: 5.5vh;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-left: 0.5rem;
+                    color: var(--ion-color-dark);
+                    background-color: transparent;
+                    box-shadow: 0 1px 1px rgba(#999, 0.5);
+
+                    
+                    ion-icon{
+                        font-size: 18px;
+                        color: var(--custom-accent1);
+                        margin-right: 1rem;
+                    }
+                }
+
+            }
+            .hor-buttons{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1rem;
+                box-shadow: 1px 0 1px var(--ion-color-dark);
+                button{
+                    width: 100%;
+                    height: 5.5vh;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-left: 0.5rem;
+                    color: var(--ion-color-dark);
+                    background-color: transparent;
+                    box-shadow: 0 1px 1px rgba(#999, 0.5);
+
+                    
+                    ion-icon{
+                        font-size: 18px;
+                        color: var(--custom-accent1);
+                        margin-right: 1rem;
+                    }
+                }
+            }
+
+        }
+    }
+}

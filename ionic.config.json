@@ -1,0 +1,8 @@
+{
+  "name": "AmarDC-tabs",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

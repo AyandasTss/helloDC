@@ -1,0 +1,196 @@
+ion-toolbar{
+    --background: var(--bd-green-dark);
+    color: var(--ion-color-light);
+    ion-title{
+        font-size: 20pt;
+        font-weight: 600;
+    }
+    .notification{
+        position: relative;
+        width: fit-content;
+        text-align: right;
+        ion-icon{
+            font-size: 26px;
+        }
+        ion-badge{
+            --background: var(--bd-red-light);
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top:0;
+            right: 0;
+        }
+    }
+}
+
+
+.flex-full{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.complains{
+    .search{
+        width:100%;
+        display: flex;
+        margin-top: 0.5rem;
+        
+    }
+
+    /*for slider cards*/
+    .slider{
+        width: 100%;
+        margin-bottom: 0.5rem;
+        h2{
+            width: 85%;
+            margin: auto;
+            margin-top: 1rem;
+            font-size: 22px;
+            font-weight: 600;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid var(--f-dark2);
+        }
+        ion-slides{
+            width: 100%;
+            height: 100%;
+            margin-top: 0.5rem;
+            ion-slide{
+                width: 80%;
+                ion-card{
+                    width: 100%;
+                    height: 100%;
+                    background-color: var(--bd-green-light);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    &-title{
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: var(--ion-color-light);
+                    }
+                    &-subtitle{
+                        width: fit-content;
+                        text-align: center;
+                        padding: 3px 10px;
+                        color: var(--bd-green-dark);
+                        border-radius: 50px;           
+                    }
+                    .pending{
+                        background-color: var(--ion-color-warning);
+                    }
+                    .active{
+                        background-color: var(--ion-color-success);
+                    }
+                    .processing{
+                        background-color: var(--ion-color-warning);
+                    }
+                    .cancled{
+                        background-color: var(--ion-color-danger);
+                    }
+                    .complete{
+                        background-color: var(--ion-color-secondary);
+                    }
+                    
+                    &-header, &-content{
+                        width: 100%;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        .desc{
+                            width: 100%;
+                            text-align: left;
+                            
+                            p{
+                                font-size: 16px;
+                                color: var(--ion-color-light);
+                            }
+                            
+                        }
+                        .action{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-top: 1rem;
+                            a{
+                                width: fit-content;
+                                background: none;
+                                font-size: 18px;
+                                text-decoration: none;
+                                color: var(--f-d-light);
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            button{
+                                background: transparent;
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: var(--ion-color-light);
+                                display: flex;
+                                align-items: center;
+                                &:hover{
+                                    color: var(--ion-colo-light);
+                                }
+                            }
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+
+    }
+
+    /*for lists*/
+    .complaints{
+        width: 100%;
+        ion-accordion{
+            ion-item[slot="header"]{
+                
+                --background: var(--bd-green-light);
+                color: var(--f-light);
+                ion-label{
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                    color: var(--ion-color-light);
+                    
+                }
+                
+                
+            }
+            ion-list[slot="content"]{
+                ion-label{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h4{
+                        font-size: 18px;
+                    }
+                    button{
+                        background-color: transparent;
+                        ion-icon{
+                            font-size: 20px;
+                            color: var(--bd-green-light);
+                        }
+                        ion-icon[name="trash-outline"]{
+                            color: var(--ion-color-danger);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

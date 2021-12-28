@@ -1,0 +1,99 @@
+ion-toolbar{
+    --background: var(--bd-green-dark);
+    width: 100%;
+
+    .header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ion-title{
+            font-size: 22pt;
+            font-family: 'Encode Sans Condensed', sans-serif;
+            font-weight: 900;
+            color: var(--ion-color-light);
+            width: fit-content;
+        }
+        ion-item{
+            --background: transparent;
+            color: var(--ion-color-light);
+            width: fit-content;
+            padding: 0;
+            margin: 0;
+            ion-label{
+                width: fit-content;
+                margin: 0;
+                padding: 0;
+                font-size: 16px;
+                font-weight: normal;
+            }
+            ion-select{
+                margin: 0;
+                padding: 0;
+                width: 60px;
+                font-size: 16px;
+                color: var(--ion-color-light);
+            }
+    
+        }
+    }
+
+
+
+
+    
+}
+
+
+.signin{
+    --background: url('../../assets/images/background.jpg') no-repeat 100% 100%;
+    .container{
+        width: 80%;
+        margin: auto;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .header{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ion-avatar{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .body{
+            width: 100%;
+            
+            ion-item{
+                display: flex;
+                flex-direction: column;
+                --background: transparent;
+                ion-label{
+                    color: var(--bd-green-dark);
+                    font-size: 14pt;
+                    font-weight: 500;
+                }
+                ion-input{
+                    font-size: 12pt;
+                    color: var(--bd-green-dark);
+                }
+                ion-checkbox{
+                    
+                }
+
+            }
+            ion-button{
+                --background: var(--bd-green-dark);
+                font-weight: 700;
+                font-size: 12pt;
+                --border-radius: 15px !important;
+            }
+        }
+    }
+
+}

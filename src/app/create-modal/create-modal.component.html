@@ -1,0 +1,141 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="closeModal()" >
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+        Create Post
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button >
+        Post
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="modal-body">
+  <ion-card >
+    <ion-card-header>        
+      <ion-avatar>
+        <img src="https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg">
+      </ion-avatar>
+      <div class="title">
+        <ion-card-title>Ayan Das</ion-card-title>
+        <ion-card-subtitle class="post_date">22-Dec-2021</ion-card-subtitle>
+        <ion-card-subtitle class="post_place"><ion-icon  name="location"></ion-icon>{{this.DisplayLocation}}</ion-card-subtitle>
+        
+      </div>
+      
+    </ion-card-header>
+    <ion-card-content class="desc">
+      <ion-textarea autofocus="true" auto-grow="true" placeholder="Enter Your Complain or Application here..." required="true"></ion-textarea>
+    </ion-card-content>
+    <ion-card-content class="preview">
+      <div class="group-gap">
+        <!-- Upload image -->
+        <div class="avatar-upload">
+          <div class="avatar-edit">
+            <input
+              type="file"
+              id="imageUpload"
+              accept=".png, .jpg, .jpeg"
+              #fileInput
+              (change)="uploadFile($event)"
+            />
+          </div>
+          <div class="avatar-preview dialog" *ngFor = "let image of imageUrlArray">
+            
+
+            <ion-img [src]="image"></ion-img>
+            <ion-icon name="close-outline"></ion-icon>
+            
+            
+            
+            
+            
+            
+            <!-- <div
+              id="imagePreview"
+              [style.backgroundImage]="'url(' + image + ')'"
+            > -->
+            
+            
+          <!-- </div> -->
+              <!-- <div id="imagePreview">
+                <ion-img [src]="image"></ion-img>
+
+                <ion-button  shape="round">
+                  <ion-icon  name="close-outline"></ion-icon>
+                </ion-button>
+
+
+
+                <!-- <a  href="#" class="close-thik"></a> -->
+              <!-- </div>  -->
+
+          </div>
+        </div>
+        <!-- <div *ngFor = "let image of imageUrlArray">
+          <img src="image" alt="">{{image}}
+        </div> -->
+      </div>
+    </ion-card-content>
+
+
+    <!-- buttons are wrapped with buttons div -->
+
+    <div class="buttons">
+      
+    <ion-card-content class="card-btns">
+      <ion-buttons >
+        <ion-button (click)="fileInput.click()">
+          <ion-icon  name="image-outline"></ion-icon>
+          Photo
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons  >
+        <ion-button  (click)="openCamera()">
+          <ion-icon  name="camera-outline"></ion-icon>
+          Camera
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons >
+        <ion-button (click)="getCurrentCoordinates()">
+          <ion-icon  name="location-outline"></ion-icon>
+          Location
+        </ion-button>
+      </ion-buttons>
+    </ion-card-content>
+    <ion-card-content class="post-btn">
+      <button >Post</button>
+    </ion-card-content>
+    </div>
+
+
+
+    <!-- <ion-card-content class="card-btns">
+      <ion-buttons >
+        <ion-button (click)="fileInput.click()">
+          <ion-icon  name="image-outline"></ion-icon>
+          Photo
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons  >
+        <ion-button  (click)="openCamera()">
+          <ion-icon  name="camera-outline"></ion-icon>
+          Camera
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons >
+        <ion-button (click)="getCurrentCoordinates()">
+          <ion-icon  name="location-outline"></ion-icon>
+          Location
+        </ion-button>
+      </ion-buttons>
+    </ion-card-content>
+    <ion-card-content class="post-btn">
+      <button >Post</button>
+    </ion-card-content> -->
+    
+  </ion-card>
+</ion-content>

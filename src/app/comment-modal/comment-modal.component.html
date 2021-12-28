@@ -1,0 +1,179 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons (click)="dismissComment()" slot="start">
+      <ion-button >
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+        Comments
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button >
+        Add
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="comment-modal">
+  
+
+
+  <div class="comments">
+    <ion-list>
+      
+      <ion-item>
+        <div class="userComment">
+          <div class="userImg">
+            <ion-avatar>
+              <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" />
+            </ion-avatar>
+          </div>
+          <div class="userPost">
+            <div class="header">
+              <h4>Jeson Burne</h4>
+            </div>
+            <div class="comment">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A architecto dolores eum nisi suscipit, animi unde cupiditate tenetur. Pariatur hic odit corporis!</p>
+            </div>
+            <div class="stats">
+              <p class="time">1d</p>
+              <button>Like</button>
+              <button>Reply</button>
+            </div>
+
+            <div class="replys">
+              
+            </div>
+
+          </div>
+        </div>
+      </ion-item>
+      
+
+      <ion-item>
+        <div class="userComment">
+          <div class="userImg">
+            <ion-avatar>
+              <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" />
+            </ion-avatar>
+          </div>
+          <div class="userPost">
+            <div class="header">
+              <h4>Jeson Burne</h4>
+            </div>
+            <div class="comment">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A architecto dolores eum nisi suscipit, animi unde cupiditate tenetur. Pariatur hic odit corporis!</p>
+            </div>
+            <div class="stats">
+              <p class="time">1d</p>
+              <button>Like</button>
+              <button>Reply</button>
+            </div>
+
+            <div class="replys">
+              <div class="userComment">
+                <div class="userImg">
+                  <ion-avatar>
+                    <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" />
+                  </ion-avatar>
+                </div>
+                <div class="userPost">
+                  <div class="header">
+                    <h4>Jack Richard</h4>
+                  </div>
+                  <div class="comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, corrupti.</p>
+
+                  </div>
+                  <div class="stats">
+                    <p class="time">11h</p>
+                    <button>Like</button>
+                    <button>Reply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </ion-item>
+      
+
+      <!-- <ion-item>
+        <div class="userComment">
+          <div class="userImg">
+            <ion-avatar>
+              <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" />
+            </ion-avatar>
+          </div>
+          <div class="userPost">
+            <div class="header">
+              <h4>Jeson Burne</h4>
+            </div>
+            <div class="comment">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A architecto dolores eum nisi suscipit, animi unde cupiditate tenetur. Pariatur hic odit corporis!</p>
+              <ion-img src="https://styleforsuccess.com/wp-content/uploads/2017/06/blackout-uhoh-1-300x191.gif"></ion-img>
+            </div>
+            <div class="stats">
+              <p class="time">1d</p>
+              <button>Like</button>
+              <button>Reply</button>
+            </div>
+
+            <div class="replys">
+
+            </div>
+
+          </div>
+        </div>
+      </ion-item> -->
+<!-- 
+      <ion-item>
+        <div class="userComment">
+          <div class="userImg">
+            <ion-avatar>
+              <img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" />
+            </ion-avatar>
+          </div>
+          <div class="userPost">
+            <div class="header">
+              <h4>Jeson Burne</h4>
+            </div>
+            <div class="comment">
+              <ion-img src="https://styleforsuccess.com/wp-content/uploads/2017/06/blackout-uhoh-1-300x191.gif"></ion-img>
+            </div>
+            <div class="stats">
+              <p class="time">1d</p>
+              <button>Like</button>
+              <button>Reply</button>
+            </div>
+
+            <div class="replys">
+
+            </div>
+
+          </div>
+        </div>
+      </ion-item>
+       -->
+    
+    
+      </ion-list>
+  </div>
+
+
+  <div class="commentBox">
+
+    <div class="areaWrapper">
+      <ion-textarea placeholder="Write a comment" autoGrow="true" autofocus="true"></ion-textarea>
+      
+      <ion-button >
+        post
+      </ion-button>
+    </div>
+
+    
+  </div>
+
+
+
+</ion-content>

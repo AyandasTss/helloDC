@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button href="/tabs/home">
+        <ion-icon name="arrow-back-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button focuse>
+        POST
+      </ion-button>
+    </ion-buttons>
+    <ion-title>create-complains</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="full-flex create">
+  <section class="register-form">
+    <div class="form-header">
+      <div class="user-img">
+        <img src="https://nutrikiran.com/wp-content/uploads/2019/09/my_image.png" >
+      </div>
+      <div class="user-name">
+        <h4>Ayan Das</h4>
+        <select class="comp-type">
+          <option value="Maintainence">Maintainence</option>
+          <option value="Security">Security</option>
+          <option value="Medical">Medical</option>
+          <option value="Land">Land and Housing</option>
+          <option value="Civil">Civil Issue</option>
+          <option value="General" selected>General</option>
+        </select>
+      </div>
+    </div>
+    <form action="" class="form-content">
+      <div class="text-area">
+        <!-- <ion-input placeholder="Complain Title" autofocus="true"></ion-input> -->
+        <ion-textarea  placeholder="Complain Details" autogrow="true"></ion-textarea>
+      </div>
+
+
+      <!-- <div class="hor-buttons">
+        <button>
+          <ion-icon name="images-outline"></ion-icon>
+          Photos
+        </button>
+        <button>
+          <ion-icon name="camera-outline"></ion-icon>
+          Camera
+        </button>
+      </div> -->
+
+      <div class="buttons">
+        <button>
+          <ion-icon name="images-outline"></ion-icon>
+          Photos
+        </button>
+        <button>
+          <ion-icon name="camera-outline"></ion-icon>
+          Camera
+        </button>
+      </div>
+    </form>
+
+  </section>
+
+</ion-content>

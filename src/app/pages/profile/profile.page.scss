@@ -1,0 +1,166 @@
+ion-toolbar{
+    --background: var(--bd-green-dark);
+    color: var(--f-light);
+
+    ion-title{
+        font-size: 22pt;
+        font-family: 'Encode Sans Condensed', sans-serif;
+        font-weight: 900;
+    }
+    .notification{
+        position: relative;
+        width: fit-content;
+        text-align: right;
+        ion-icon{
+            font-size: 26px;
+        }
+        ion-badge{
+            --background: var(--bd-red-light);
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top:0;
+            right: 0;
+        }
+    }
+}
+
+.flex-full{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    --background: var(--f-d-light);
+    
+}
+
+.profile{
+    .profile-card{
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        .cover{
+            width: 90%;
+            height: 25vh;
+            position: relative;
+            top: 1rem;
+            margin: auto;
+            background: url('https://i.pinimg.com/originals/d8/bd/d9/d8bdd9632becd0fe3ad025cabb91ba93.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            border-radius: 10px 10px 0 0;
+        }
+        .user-pic{
+            width: 15rem;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            top: -5rem;
+            .img{
+                width: 10rem;
+                height: 10rem;
+                margin: auto;
+                margin-top: 0;
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    border: 5px solid var(--bd-green-light);
+                
+                }
+            }
+            h2{
+                width: 100%;
+                font-size: 20pt;
+                font-weight: 700;
+                color: var(--bd-green-dark);
+            }
+        }
+    }
+
+    .buttons{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+        ion-buttons{
+            width: 45%;
+            height: fit-content;
+            ion-button{
+                height: 3rem;
+                --background: var(--bd-green-light);
+                --border-radius: 5px;
+                width: 100%;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: var(--f-light);
+                ion-icon[name="add-outline"]{
+                    font-size: 18pt;
+                }
+
+            }
+        }
+    }
+
+    .details{
+        width: 100%;
+        border-top: 1px solid var(--f-dark2);
+        ion-list{
+            ion-item{
+                color: var(--bd-green-dark);
+                ion-icon{
+
+                    margin-right: 0.5rem;
+                }
+                
+            }
+        }
+    }
+
+
+    .footer{
+        width: 100%;
+        margin-top: 0.5rem;
+        border-bottom: 1px solid var(--f-dark2);
+
+        ion-accordion-group{
+            ion-accordion{
+                ion-item[slot="header"]{
+                    --background: var(--bd-green-light);
+                    ion-label{
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: var(--ion-color-light);
+                        ion-icon{
+                            font-size: 20px;
+                            margin-right: 0.5rem;
+
+                        }
+                    }
+                }
+                ion-list{
+                    ion-item{
+                        .lang{
+                            width: 100%;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

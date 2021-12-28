@@ -1,0 +1,30 @@
+ion-tabs{
+    ion-tab-bar{
+        --background: var(--ion-color-light);
+        ion-icon{
+            color: var(--bd-green);
+            font-size: 30px;
+            opacity: 0.7;
+        }
+        
+        .tab-selected{
+            border-bottom: 2px solid var(--bd-red);
+            ion-icon{
+                color: var(--bd-red);
+                opacity: 1;
+            }
+        }
+    }
+    ion-fab{
+        margin-bottom: 4rem;
+        margin-right: 1rem;
+        ion-fab-button{
+            --background: var(--bd-green);
+            color: var(--ion-color-light);
+            ion-icon{
+                font-size: 40px;
+                --ionicon-stroke-width: 40px;
+            }
+        }
+    }
+}

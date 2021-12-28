@@ -1,0 +1,225 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Hello DC</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="notification">
+        <ion-icon slot="start" name="notifications"></ion-icon>
+        <ion-badge>99</ion-badge>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="full-flex user-home">
+
+  <section class="status-card">
+    <div class="profile">
+      <img src="https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg" alt="">
+    </div>
+
+    <button id="create-modal" (click)="openModal()" class="text-area">
+      <p >আপনার অভিযোগ / আবেদন</p>
+    </button>
+
+    <!-- <button>
+      photo
+    </button> -->
+
+  </section>
+
+  <div class="feed">
+    <div class="title">
+      <h6>আপনার অভিযোগ</h6>
+    </div>
+
+    <!-- <app-feed-card ></app-feed-card> -->
+    
+
+    <ion-card >
+      <ion-card-header>        
+        <ion-avatar>
+          <img src="https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg">
+        </ion-avatar>
+        <div class="title">
+          <ion-card-title>বিদ্যুৎ সমস্যা</ion-card-title>
+          <ion-card-subtitle>23-Dec-2021</ion-card-subtitle>
+        </div>
+        
+      </ion-card-header>
+      <ion-card-content class="desc">
+        আমাদের গ্রামে বহু লোক বাস করেন I এই গ্রামে অনেক পাড়া আছে ৷ প্রতি পড়াের মানুষ মিলেমিশে বাস  করেন I আমাদের গ্রামে একটি মাধ্যমিক বিদ্যালয় ও একটি প্রাথমিক বিদ্যালয় আছে ৷ সেখানে ছেলেমেয়েরা লেখাপড়া শেখে       </ion-card-content>
+      <ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl47aWCdghL4H-tjWFyqFCxY0pviZ5eiR-xv1oMdbWYKJPfmNmuZQjsJ--wE3llOoe4Mo&usqp=CAU"></ion-img>
+      <ion-card-content class="card-btns">
+        <ion-buttons slot="start">
+          <ion-button >
+            <ion-icon slot="start" name="heart-outline"></ion-icon>
+            Like
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end" >
+          <ion-button (click)="commentModal()">
+            <ion-icon slot="start" name="chatbubble-outline"></ion-icon>
+            Comment
+          </ion-button>
+        </ion-buttons>
+      </ion-card-content>
+      
+    </ion-card>
+
+    <ion-card >
+      <ion-card-header>        
+        <ion-avatar>
+          <img src="https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg">
+        </ion-avatar>
+        <div class="title">
+          <ion-card-title>Electricity Issue</ion-card-title>
+          <ion-card-subtitle>23-Dec-2021</ion-card-subtitle>
+        </div>
+        
+      </ion-card-header>
+      <ion-card-content class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ipsum aliquam illo explicabo.
+      </ion-card-content>
+      <ion-img src="https://www.theindianwire.com/wp-content/uploads/2014/04/no-power-1200x1047.jpg"></ion-img>
+      <ion-card-content class="card-btns">
+        <ion-buttons slot="start">
+          <ion-button >
+            <ion-icon slot="start" name="heart-outline"></ion-icon>
+            Like
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end" >
+          <ion-button  >
+            <ion-icon slot="start" name="chatbubble-outline"></ion-icon>
+            Comment
+          </ion-button>
+        </ion-buttons>
+      </ion-card-content>
+      
+    </ion-card>
+
+    <ion-card >
+      <ion-card-header>        
+        <ion-avatar>
+          <img src="https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg">
+        </ion-avatar>
+        <div class="title">
+          <ion-card-title>Electricity Issue</ion-card-title>
+          <ion-card-subtitle>23-Dec-2021</ion-card-subtitle>
+        </div>
+        
+      </ion-card-header>
+      <ion-card-content class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ipsum aliquam illo explicabo.
+      </ion-card-content>
+      <ion-card-content class="card-btns">
+        <ion-buttons slot="start">
+          <ion-button >
+            <ion-icon slot="start" name="heart-outline"></ion-icon>
+            Like
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons  slot="end" >
+          <ion-button  >
+            <ion-icon slot="start" name="chatbubble-outline"></ion-icon>
+            Comment
+          </ion-button>
+        </ion-buttons>
+      </ion-card-content>
+      
+    </ion-card>
+
+    <ion-card >
+      <ion-card-header>        
+        <ion-avatar>
+          <img src="https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg">
+        </ion-avatar>
+        <div class="title">
+          <ion-card-title>Electricity Issue</ion-card-title>
+          <ion-card-subtitle>23-Dec-2021</ion-card-subtitle>
+        </div>
+        
+      </ion-card-header>
+      <ion-card-content class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ipsum aliquam illo explicabo.
+      </ion-card-content>
+      <ion-card-content class="card-btns">
+        <ion-buttons slot="start">
+          <ion-button >
+            <ion-icon slot="start" name="heart-outline"></ion-icon>
+            Like
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end" >
+          <ion-button  >
+            <ion-icon slot="start" name="chatbubble-outline"></ion-icon>
+            Comment
+          </ion-button>
+        </ion-buttons>
+      </ion-card-content>
+      
+    </ion-card>
+
+  </div>
+
+
+
+</ion-content>
+
+<!-- create-modal -->
+<!-- <ion-modal id="modal-create" class="create-modal" trigger="create-modal">
+  <ng-template>
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button href="/tabs/home" >
+            <ion-icon slot="start" name="arrow-back"></ion-icon>
+            Create Post
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          <ion-button href="/tabs/home">
+            Post
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="modal-body">
+      <ion-card >
+        <ion-card-header>        
+          <ion-avatar>
+            <img src="https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg">
+          </ion-avatar>
+          <div class="title">
+            <ion-card-title>Ayan Das</ion-card-title>
+            <ion-card-subtitle>22-Dec-2021</ion-card-subtitle>
+            
+          </div>
+          
+        </ion-card-header>
+        <ion-card-content class="desc">
+          <ion-textarea autofocus="true" auto-grow="true" placeholder="Enter Your Complain or Application here..." required="true"></ion-textarea>
+        </ion-card-content>
+        <ion-card-content class="card-btns">
+          <ion-buttons slot="start">
+            <ion-button (click)="onClick()">
+              <ion-icon slot="start" name="image-outline"></ion-icon>
+              Photo
+            </ion-button>
+          </ion-buttons>
+          <ion-buttons slot="end" >
+            <ion-button  (click)="onClick()">
+              <ion-icon slot="start" name="camera-outline"></ion-icon>
+              Camera
+            </ion-button>
+          </ion-buttons>
+        </ion-card-content>
+        <ion-card-content class="post-btn">
+          <button>Post</button>
+        </ion-card-content>
+        
+      </ion-card>
+    </ion-content>
+  </ng-template>
+</ion-modal> -->

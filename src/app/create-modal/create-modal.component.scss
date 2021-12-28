@@ -1,0 +1,285 @@
+ion-header{
+  ion-toolbar{
+      ion-button{
+          font-size: 20px;
+          text-transform: capitalize;
+      }
+
+      ion-buttons[slot="end"]{
+          ion-button{
+              color: var(--bd-green-light);
+          }
+      }
+  }
+}
+
+.modal-body{
+  --background: var(--f-d-light);
+
+
+
+
+  ion-card{
+      --background: var(--f-light);
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      overflow-y: auto;
+      ion-card-header{
+          width: 100%;
+          margin: 0 auto;
+          padding: 0.5rem 0.8rem;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid rgba(#999, 0.5);
+
+          ion-avatar{
+              width: 60px;
+              height: 50px;
+              margin-right: 1rem;
+          }
+          .title{
+              width: 100%;
+              ion-card-title{
+                  font-size: 18px;
+                  font-weight: 700;
+                  color: var(--bd-green-dark);
+              }
+              .post_date{
+                  font-size: 14px;
+                  font-weight: 500;
+                  color: var(--bd-red-light);
+              }
+
+              .post_place{
+                  display: flex;
+                  align-items: center;
+                  color: var(--bd-green-light);
+                  ion-icon{
+                      color: var(--bd-green-dark);
+                  }
+
+              }
+              
+          }
+      }
+      .desc{
+          width: 100%;
+          font-weight: normal;
+          color: var(--f-dark1);
+        //   padding-top: 0.5rem;
+          margin-bottom: 1rem;
+          font-size: 14px;
+          font-weight: normal;
+          ion-textarea{
+              min-height: fit-content !important;
+              max-height: 100% !important;
+              font-size: 14px;
+              --placeholder-font-weight: 600;
+              
+
+          }
+          
+      }
+      .preview{
+        width: 100%;
+        min-height: 45%;
+        padding: 0;
+        margin-top: 0.5rem;
+        .group-gap{
+          width: 100%;
+          height: auto;
+          padding: 0;
+          
+        }
+        
+
+
+      }
+
+      .buttons{
+          width: 100%;
+          
+
+          .card-btns{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(#999, 0.5);
+            ion-buttons{
+                  width: fit-content;
+                  padding: 0.3rem 0.5rem;
+                  border-radius: 5px;
+  
+                ion-button{
+                    font-size: 14px;
+                    text-align: center;
+                    color: var(--bd-green-dark);
+                    text-transform: capitalize;
+                    ion-icon{
+                      color: var(--bd-red-light);
+                      margin-right: 0.5rem;
+  
+                    }
+                    
+                }
+            }
+            
+        }
+        .post-btn{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            button{
+                width: 100%;
+                height: fit-content;
+                padding: 0.8rem 0;
+                background: var(--bd-green-dark);
+                color: var(--bd-red-light);
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+            }
+        }
+      }
+
+     
+  
+     
+      
+  }
+}
+
+
+
+.avatar-upload {
+position: relative;
+max-width: 90vw;
+min-height: fit-content;
+max-height: auto;
+// margin: 10px auto 30px;
+margin: 0 auto;
+padding: 0;
+}
+
+.avatar-upload .avatar-edit {
+position: absolute;
+right: 19px;
+z-index: 1;
+top: 13px;
+}
+
+.avatar-upload .avatar-edit input {
+display: none;
+}
+
+.avatar-upload .avatar-edit .custom-label {
+display: inline-block;
+width: 34px;
+height: 34px;
+margin-bottom: 0;
+border-radius: 0%;
+background: #3efc78;
+border: 1px solid transparent;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+cursor: pointer;
+font-weight: normal;
+transition: all 0.2s ease-in-out;
+}
+
+.avatar-upload .avatar-edit .upload-image {
+background: #3efc78;
+}
+
+.avatar-upload .avatar-edit .remove-image {
+background: rgba(233, 30, 98, 0.075);
+}
+
+.avatar-upload .avatar-edit .custom-label:hover {
+opacity: 1;
+}
+
+.avatar-upload .avatar-edit .custom-label:after {
+position: absolute;
+text-align: center;
+margin: auto;
+top: 8px;
+right: 0;
+left: 2px;
+width: 18px;
+}
+
+.avatar-upload .avatar-edit .upload-image:after {
+content: url('/assets/edit.svg');
+}
+
+.avatar-upload .avatar-edit .remove-image:after {
+content: url('/assets/close.svg');
+left: 0px !important;
+}
+
+.avatar-upload .avatar-preview {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem 0;
+    border-radius: 0%;
+    overflow: hidden;
+    // border: 12px solid #fff;
+    // box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+    position: relative;
+
+    ion-img{
+        width: 100%;
+        height: 100%;
+
+    }
+    ion-icon{
+        font-size: 25pt;
+        color: var(--bd-red-light);
+        box-shadow: none;
+        border: none;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        cursor: pointer;
+    }
+
+
+
+// #imagePreview{
+//     position: relative;
+//     width: auto;
+//     height: auto;
+//     ion-img{
+//         width: 100%;
+//         height: 100%;
+
+//     }
+//     ion-button{
+//         width: 20px;
+//         height: 20px;
+//         position: absolute;
+//         top: 1rem;
+//         right: 1.5rem;
+//         z-index: 55;
+//         color: var(--bd-red-dark);
+//     }
+// }
+}
+
+
+// .avatar-upload .avatar-preview>div {
+// width: 100%;
+// height: 100%;
+// border-radius: 0%;
+// background-size: cover;
+// background-repeat: no-repeat;
+// background-position: center;
+// }

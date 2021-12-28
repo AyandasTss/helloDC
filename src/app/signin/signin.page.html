@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+
+    <div class="header">
+      <ion-title>Hello DC</ion-title>
+      <ion-item>
+        <!-- <ion-label>Ln</ion-label> -->
+        <ion-select value="En">
+          <ion-select-option value="Bn" >Bengali</ion-select-option>
+          <ion-select-option value="En">English</ion-select-option>
+          
+        </ion-select>
+      </ion-item>
+    </div>
+
+
+  
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content class="signin">
+
+  <div class="container">
+    <div class="header">
+      <ion-avatar>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7HWTmhQ_5fIQlEsV3LpEvOzjjM25t_DfWO86AozxE8fDNM5aMtukqrOIb3GirTThWBW0&usqp=CAU">
+      </ion-avatar>
+      <!-- <div class="img">
+        <ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7HWTmhQ_5fIQlEsV3LpEvOzjjM25t_DfWO86AozxE8fDNM5aMtukqrOIb3GirTThWBW0&usqp=CAU"></ion-img>
+      </div> -->
+    </div>
+    <div class="body">
+      <ion-item >
+        <ion-label>
+          <ion-icon slot="start" name="mail-outline"></ion-icon>
+        </ion-label>
+        <ion-input type="email" placeholder="hithere@example.com"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label>
+          <ion-icon slot="start" name="call-outline"></ion-icon>
+        </ion-label>
+        <ion-input type="email" placeholder="+91-98****10"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label>Remember Me</ion-label>
+        <ion-checkbox slot="start" checked="isChecked" ></ion-checkbox>
+      </ion-item> 
+      <ion-button  expand="full">
+        Get OTP
+      </ion-button>
+    </div>
+  </div>
+
+</ion-content>

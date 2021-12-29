@@ -125,10 +125,64 @@ ion-toolbar{
                 }
                 .title{
                     ion-card-title{
-                        font-size: 18px;
-                        font-weight: 600;
-                        margin-bottom: 0.3rem;
-                        color: var(--bd-green-dark);
+                        width: fit-content;
+                        display: flex;
+                        align-items: center;
+
+                        margin-bottom: 2px;
+                        white-space: nowrap;
+                        h4{ 
+                            font-size: 18px;
+                            font-weight: 700;
+                            color: var(--bd-green-dark);
+                            margin: 0;
+                            padding: 0;
+                            margin-right: 1rem;
+                            
+                        }
+                        .status{
+                            font-size: 14px;
+                            width: fit-content;
+                            padding: 0.3rem 0.5rem;
+                            border-radius: 50px;
+                            color: var(--ion-color-light);
+                            text-decoration: none;
+                        }
+                        .active{
+                            background: var(--ion-color-success);
+                        }
+                        .pending,.processing{
+                            background: var(--ion-color-warning);
+                        }
+                        .canceled{
+                            background: var(--ion-color-danger);
+                        }
+                        .completed{
+                            
+                            background: var(--ion-color-primary);
+                        }
+
+
+                    }
+                    ion-card-subtitle{
+                        width: fit-content;
+                        margin-top: 0;
+
+                        h6{
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: var(--bd-green-dark);
+                            margin: 0;
+                            padding: 0;
+                            margin-right: 1rem;
+                        }
+                        
+                        .date{
+                            font-size: 14px;
+                            padding: 0;
+                            margin: 0;
+                        }
+
                     }
                 }
             }

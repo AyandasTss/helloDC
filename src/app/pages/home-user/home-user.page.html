@@ -43,7 +43,7 @@
         <div class="title">
           <ion-card-title>
             <h4>বিদ্যুৎ সমস্যা</h4>
-            <a class="status active" href="#">Active</a>
+            <a class="status active" (click)="complainStatus()">Active</a>
           </ion-card-title>
           <ion-card-subtitle>
             <h6>Token Id: <strong>112233</strong></h6>
@@ -87,7 +87,7 @@
         <div class="title">
           <ion-card-title>
             <h4>Electricity issue</h4>
-            <a class="status completed" href="#">Completed</a>
+            <a class="status completed" (click)="complainStatus()">Completed</a>
           </ion-card-title>
           <ion-card-subtitle>
             <h6>Token Id: <strong>112233</strong></h6>
@@ -132,7 +132,7 @@
         <div class="title">
           <ion-card-title>
             <h4>Road Damaged</h4>
-            <a class="status processing" href="#">Processing</a>
+            <a class="status processing" (click)="complainStatus()">Processing</a>
           </ion-card-title>
           <ion-card-subtitle>
             <h6>Token Id: <strong>112233</strong></h6>
@@ -176,7 +176,7 @@
         <div class="title">
           <ion-card-title>
             <h4>Security Issue</h4>
-            <a class="status canceled" href="#">Canceled</a>
+            <a class="status canceled" (click)="complainStatus()">Canceled</a>
           </ion-card-title>
           <ion-card-subtitle>
             <h6>Token Id: <strong>112233</strong></h6>

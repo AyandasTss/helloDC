@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { CommentModalComponent } from 'src/app/comment-modal/comment-modal.component';
+import { ComplainStatusComponent } from 'src/app/complain-status/complain-status.component';
 import { CreateModalComponent } from 'src/app/create-modal/create-modal.component';
 
 @Component({
@@ -62,6 +63,17 @@ export class HomeUserPage implements OnInit {
       presentingElement: await this.modalCtrl.getTop()
     });
     await comments.present();
+  }
+
+  async complainStatus(){
+    const complainStatus= await this.modalCtrl.create({
+      component: ComplainStatusComponent,
+      
+      swipeToClose: true,
+      presentingElement: await this.modalCtrl.getTop(),
+
+    });
+    await complainStatus.present();
   }
 
   ngOnInit() {

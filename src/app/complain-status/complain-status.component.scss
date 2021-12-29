@@ -1,0 +1,157 @@
+ion-header{
+    ion-toolbar{
+        ion-button{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: var(--bd-green-dark);
+        }
+  
+        ion-buttons[slot="end"]{
+            ion-button{
+                color: var(--bd-green-light);
+                font-size: 16px;
+                font-weight:700;
+            }
+        }
+    }
+}
+.complainStatus{
+    width: 100%;
+    height: 100%;
+    --background: var(--ion-color-light);
+    // position: relative;
+
+
+
+    .compData{
+        width: 100%;
+        margin-bottom: 1rem;
+        p{
+            width: fit-content;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--bd-red-light);
+            margin-left: 1rem;
+            text-transform: capitalize;
+        }
+        h2{
+            font-size: 22pt;
+            font-weight: 800;
+            font-family: 'Encode Sans Condensed', sans-serif;
+            margin-left: 1rem;
+            margin-bottom: 1.5rem;
+            color: var(--bd-green-dark);
+        }
+        h5{
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            color: var(--bd-green-dark);
+            line-height: 0;
+            ion-icon{
+                margin-right: 0.5rem;
+                color: var(--bd-red-light);
+            }
+
+            strong{
+                font-size: 18px;
+                margin-left: 0.3rem;
+            }
+        }
+
+    }
+    .description{
+        width: 100%;
+        ion-accordion-group{
+            ion-accordion{
+                ion-item[slot="header"]{                  
+                    font-size: 16pt;
+                    font-weight: 600;
+                    color: var(--bd-green-dark);
+
+                }
+                ion-item[slot="content"]{
+                    --background: var(--ion-color-light);
+                }
+                ion-item{
+
+                    p{
+                        font-size: 14px;
+                        font-weight: normal;
+
+                    }
+                    --border-color: transparent;
+                }
+            }
+        }
+    }
+    .images{
+        width: 100%;
+        height: fit-content;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+        ion-accordion-group{
+            ion-accordion{
+
+                ion-item[slot="header"]{                  
+                    font-size: 16pt;
+                    font-weight: 600;
+                    color: var(--bd-green-dark);
+
+                }
+                ion-item[slot="content"]{
+                    --background: var(--ion-color-light);
+                    --border-color: transparent;
+                }
+            }
+        }
+    }
+    .actions{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        bottom: -1px;
+        padding-bottom: 3px;
+        background: var(--ion-color-light);
+        border-top: 1px solid;
+        border-color: rgba(#999, 0.3);
+        .row{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ion-button{
+                --background: var(--bd-green-light);
+                width: 50%;
+                text-transform: capitalize;
+                ion-icon{
+                    color: var(--bd-red-light);
+
+                }
+            }
+        }
+        ion-button{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            --background: var(--bd-green-light);
+            text-transform: capitalize;
+            border-radius: 5px;
+            ion-icon{
+                color: var(--bd-red-light);
+                margin-right: 1rem;
+            }
+        }
+
+    }
+    
+}

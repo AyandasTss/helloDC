@@ -13,6 +13,7 @@ import { FeedCardComponent } from 'src/app/components/feed-card/feed-card.compon
 import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
 import { CreateModalComponent } from 'src/app/create-modal/create-modal.component';
 import { CommentModalComponent } from 'src/app/comment-modal/comment-modal.component';
+import { ComplainStatusComponent } from 'src/app/complain-status/complain-status.component';
 // import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import { CommentModalComponent } from 'src/app/comment-modal/comment-modal.compo
     IonicModule,
     HomeUserPageRoutingModule,
   ],
-  declarations: [HomeUserPage, FeedCardComponent,CreateModalComponent, CommentModalComponent],
+  declarations: [HomeUserPage, FeedCardComponent,CreateModalComponent, CommentModalComponent, ComplainStatusComponent],
   providers: [
     Geolocation,
   ],

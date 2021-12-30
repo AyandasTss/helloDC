@@ -4,6 +4,7 @@ import { ModalController } from '@ionic/angular';
 import { CommentModalComponent } from 'src/app/comment-modal/comment-modal.component';
 import { ComplainStatusComponent } from 'src/app/complain-status/complain-status.component';
 import { CreateModalComponent } from 'src/app/create-modal/create-modal.component';
+import { PictureViewComponent } from 'src/app/picture-view/picture-view.component';
 
 @Component({
   selector: 'app-home-user',
@@ -74,6 +75,18 @@ export class HomeUserPage implements OnInit {
 
     });
     await complainStatus.present();
+  }
+
+  async picturePreview(){
+    const picturePreview= await this.modalCtrl.create({
+      component: PictureViewComponent,
+      initialBreakpoint: 1,
+      breakpoints: [0,1],
+      swipeToClose: true,
+      presentingElement: await this.modalCtrl.getTop()
+
+    });
+    await picturePreview.present();
   }
 
   ngOnInit() {

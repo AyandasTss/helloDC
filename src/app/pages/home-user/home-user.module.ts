@@ -14,6 +14,7 @@ import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
 import { CreateModalComponent } from 'src/app/create-modal/create-modal.component';
 import { CommentModalComponent } from 'src/app/comment-modal/comment-modal.component';
 import { ComplainStatusComponent } from 'src/app/complain-status/complain-status.component';
+import { PictureViewComponent } from 'src/app/picture-view/picture-view.component';
 // import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 @NgModule({
   imports: [
@@ -22,7 +23,7 @@ import { ComplainStatusComponent } from 'src/app/complain-status/complain-status
     IonicModule,
     HomeUserPageRoutingModule,
   ],
-  declarations: [HomeUserPage, FeedCardComponent,CreateModalComponent, CommentModalComponent, ComplainStatusComponent],
+  declarations: [HomeUserPage, FeedCardComponent,CreateModalComponent, CommentModalComponent, ComplainStatusComponent,PictureViewComponent],
   providers: [
     Geolocation,
   ],

@@ -40,10 +40,10 @@
         <ion-avatar>
           <img src="https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg">
         </ion-avatar>
-        <div class="title">
+        <div (click)="complainStatus()" class="title">
           <ion-card-title>
             <h4>বিদ্যুৎ সমস্যা</h4>
-            <a class="status active" (click)="complainStatus()">Active</a>
+            <a class="status active" >Active</a>
           </ion-card-title>
           <ion-card-subtitle>
             <h6>Token Id: <strong>112233</strong></h6>
@@ -113,10 +113,10 @@
         <ion-avatar>
           <img src="https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg">
         </ion-avatar>
-        <div class="title">
+        <div  (click)="complainStatus()" class="title">
           <ion-card-title>
             <h4>Electricity issue</h4>
-            <a class="status completed" (click)="complainStatus()">Completed</a>
+            <a class="status completed">Completed</a>
           </ion-card-title>
           <ion-card-subtitle>
             <h6>Token Id: <strong>112233</strong></h6>
@@ -132,11 +132,11 @@
         </div>
         
       </ion-card-header>
-      <ion-card-content class="desc">
+      <ion-card-content (click)="complainStatus()" class="desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ipsum aliquam illo explicabo.
       </ion-card-content>
 
-      <ion-card-content class="imgGrid">
+      <ion-card-content (click)="picturePreview()" class="imgGrid">
         <ion-grid >
           <ion-row>
             <ion-col size="12">
@@ -177,10 +177,10 @@
         <ion-avatar>
           <img src="https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg">
         </ion-avatar>
-        <div class="title">
+        <div  (click)="complainStatus()" class="title">
           <ion-card-title>
             <h4>Road Damaged</h4>
-            <a class="status processing" (click)="complainStatus()">Processing</a>
+            <a class="status processing">Processing</a>
           </ion-card-title>
           <ion-card-subtitle>
             <h6>Token Id: <strong>112233</strong></h6>
@@ -196,7 +196,7 @@
         </div>
         
       </ion-card-header>
-      <ion-card-content class="desc">
+      <ion-card-content (click)="complainStatus()" class="desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ipsum aliquam illo explicabo.
       </ion-card-content>
       <ion-card-content class="card-btns">
@@ -221,10 +221,10 @@
         <ion-avatar>
           <img src="https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg">
         </ion-avatar>
-        <div class="title">
+        <div (click)="complainStatus()" class="title">
           <ion-card-title>
             <h4>Security Issue</h4>
-            <a class="status canceled" (click)="complainStatus()">Canceled</a>
+            <a class="status canceled" >Canceled</a>
           </ion-card-title>
           <ion-card-subtitle>
             <h6>Token Id: <strong>112233</strong></h6>
@@ -240,7 +240,7 @@
         </div>
         
       </ion-card-header>
-      <ion-card-content class="desc">
+      <ion-card-content (click)="complainStatus()" class="desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ipsum aliquam illo explicabo.
       </ion-card-content>
       <ion-card-content class="card-btns">

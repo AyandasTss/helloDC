@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>My Complains</ion-title>
     <ion-buttons slot="end">
-      <ion-button class="notification" (click)="onClick()">
+      <ion-button class="notification" >
         <ion-icon slot="start" name="notifications"></ion-icon>
         <ion-badge>99</ion-badge>
       </ion-button>
@@ -20,7 +20,7 @@
 
   <div class="slider">
     <h2>Recent Complains</h2>
-    <ion-slides [options]="option" >
+    <ion-slides  >
 
       <ion-slide>
         <ion-card>
@@ -172,7 +172,7 @@
             
             <h4>Damaged Road</h4>
             <div class="action">
-              <button (click)="view()">
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -189,7 +189,7 @@
             
             <h4>Eleticity Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -206,7 +206,7 @@
             
             <h4>Water Supply Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -232,7 +232,7 @@
             
             <h4>Park Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -249,7 +249,7 @@
             
             <h4>Land Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -266,7 +266,7 @@
             
             <h4>Eleticity Theft Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -283,7 +283,7 @@
             
             <h4>Ambulance Service Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -309,7 +309,7 @@
             
             <h4>Damaged Road</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -326,7 +326,7 @@
             
             <h4>Eleticity Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -343,7 +343,7 @@
             
             <h4>Water Supply Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -361,7 +361,7 @@
             
             <h4>Park Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -378,7 +378,7 @@
             
             <h4>Land Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -395,7 +395,7 @@
             
             <h4>Eleticity Theft Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>
@@ -412,7 +412,7 @@
             
             <h4>Ambulance Service Issue</h4>
             <div class="action">
-              <button>
+              <button (click)="complainStatus()">
                 <ion-icon name="eye-outline"></ion-icon>
               </button>
               <button>

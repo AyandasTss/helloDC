@@ -1,3 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons (click)="closePicturePreview()" slot="start">
+      <ion-button >
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+        Posted Pictures
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button >
+        <ion-icon slot="start" name="add"></ion-icon>
+        Create
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content class="picturePreview">
   <ion-grid fixed>
     <ion-row>

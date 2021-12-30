@@ -43,7 +43,7 @@ ion-toolbar{
 .profile{
     .profile-card{
         width: 100%;
-        height: 50vh;
+        height: 45vh;
         position: relative;
         .cover{
             width: 90%;
@@ -77,10 +77,11 @@ ion-toolbar{
                 
                 }
             }
-            h2{
+            h1{
                 width: 100%;
-                font-size: 20pt;
-                font-weight: 700;
+                font-size: 22pt;
+                font-family: 'Encode Sans Condensed', sans-serif;
+                font-weight: 900;
                 color: var(--bd-green-dark);
             }
         }
@@ -158,6 +159,22 @@ ion-toolbar{
                         }
                     }
                 }
+            }
+        }
+        ion-buttons{
+            width: 100%;
+            margin: 0.3rem auto;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ion-button{
+                width: 90%;
+                --background: transparent;
+                --border-radius: 5px;
+                color: var(--bd-red-light);
+                font-weight: 600;
+                text-transform: capitalize;
             }
         }
     }

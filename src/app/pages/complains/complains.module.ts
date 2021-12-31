@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { ComplainsPageRoutingModule } from './complains-routing.module';
 
 import { ComplainsPage } from './complains.page';
+import { ComplainStatusComponent } from 'src/app/complain-status/complain-status.component';
+import { CommentModalComponent } from 'src/app/comment-modal/comment-modal.component';
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { ComplainsPage } from './complains.page';
     IonicModule,
     ComplainsPageRoutingModule
   ],
-  declarations: [ComplainsPage]
+  declarations: [ComplainsPage, ComplainStatusComponent, CommentModalComponent]
 })
 export class ComplainsPageModule {}

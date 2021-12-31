@@ -34,6 +34,14 @@ const routes: Routes = [
     path: 'signin',
     loadChildren: () => import('./signin/signin.module').then( m => m.SigninPageModule)
   },
+  {
+    path: 'get-otp',
+    loadChildren: () => import('./get-otp/get-otp.module').then( m => m.GetOtpPageModule)
+  },
+  {
+    path: 'user-register',
+    loadChildren: () => import('./user-register/user-register.module').then( m => m.UserRegisterPageModule)
+  },
   // {
   //   path: 'profile',
   //   loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)

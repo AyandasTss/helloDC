@@ -16,6 +16,7 @@
   </div> 
 
 
+
   <!-- Complaints slider -->
 
   <div class="slider">
@@ -33,13 +34,13 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quo!</p>
             </div>
             <div class="action">
-              <a href="#" >View Details</a>
+              <a (click)="complainStatus()" >View Details</a>
               
-              <button >
-                Contact 
-                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              <ion-button (click)="commentModal()" >
+                Feedback 
+                <ion-icon slot="start" name="chatbubble-outline"></ion-icon>
                 
-              </button>
+              </ion-button>
             </div>
             
           </ion-card-content>
@@ -58,13 +59,13 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quo!</p>
             </div>
             <div class="action">
-              <a href="#" >View Details</a>
+              <a (click)="complainStatus()"  >View Details</a>
               
-              <button >
-                Rate It 
-                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              <ion-button (click)="commentModal()" >
+                Feedback 
+                <ion-icon slot="start" name="chatbubble-outline"></ion-icon>
                 
-              </button>
+              </ion-button>
             </div>
             
           </ion-card-content>
@@ -83,13 +84,12 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quo!</p>
             </div>
             <div class="action">
-              <a href="#" >View Details</a>
+              <a (click)="complainStatus()"  >View Details</a>
               
-              <button >
-                See Status
-                <ion-icon name="arrow-forward-sharp"></ion-icon>
-                
-              </button>
+              <ion-button (click)="commentModal()" >
+                <ion-icon slot="start" name="chatbubble-outline"></ion-icon>
+                Feedback
+              </ion-button>
             </div>
             
           </ion-card-content>
@@ -108,13 +108,12 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quo!</p>
             </div>
             <div class="action">
-              <a href="#" >View Details</a>
+              <a (click)="complainStatus()">View Details</a>
               
-              <button >
-                View Process 
-                <ion-icon name="arrow-forward-sharp"></ion-icon>
-                
-              </button>
+              <ion-button (click)="commentModal()" >
+                <ion-icon slot="start" name="chatbubble-outline"></ion-icon>
+                Feedback
+              </ion-button>
             </div>
             
           </ion-card-content>
@@ -133,13 +132,13 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quo!</p>
             </div>
             <div class="action">
-              <a href="#" >View Details</a>
+              <a (click)="complainStatus()" >View Details</a>
               
-              <button >
-                Reasigne 
-                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              <ion-button (click)="commentModal()" >
+                Feedback
+                <ion-icon slot="start" name="chatbubble-outline"></ion-icon>
                 
-              </button>
+              </ion-button>
             </div>
             
           </ion-card-content>

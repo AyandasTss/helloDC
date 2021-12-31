@@ -2,7 +2,8 @@ ion-toolbar{
     --background: var(--bd-green-dark);
     color: var(--ion-color-light);
     ion-title{
-        font-size: 20pt;
+        font-size: 22pt;
+        font-family: sans-serif;
         font-weight: 600;
     }
     .notification{
@@ -130,16 +131,15 @@ ion-toolbar{
                                     text-decoration: underline;
                                 }
                             }
-                            button{
-                                background: transparent;
+                            ion-button{
+                                --background: transparent;
+                                --box-shadow: none;
                                 font-size: 18px;
                                 font-weight: 600;
                                 color: var(--ion-color-light);
                                 display: flex;
                                 align-items: center;
-                                &:hover{
-                                    color: var(--ion-colo-light);
-                                }
+                                text-transform: capitalize;
                             }
                         }
 

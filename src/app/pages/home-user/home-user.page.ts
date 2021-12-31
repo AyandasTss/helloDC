@@ -4,6 +4,7 @@ import { ModalController } from '@ionic/angular';
 import { CommentModalComponent } from 'src/app/comment-modal/comment-modal.component';
 import { ComplainStatusComponent } from 'src/app/complain-status/complain-status.component';
 import { CreateModalComponent } from 'src/app/create-modal/create-modal.component';
+import { NotificationsComponent } from 'src/app/notifications/notifications.component';
 import { PictureViewComponent } from 'src/app/picture-view/picture-view.component';
 
 @Component({
@@ -87,6 +88,16 @@ export class HomeUserPage implements OnInit {
 
     });
     await picturePreview.present();
+  }
+  async openNotification(){
+    const notification= await this.modalCtrl.create({
+      component: NotificationsComponent,
+      swipeToClose: true,
+      cssClass: 'notificationModal',
+      presentingElement: await this.modalCtrl.getTop()
+
+    });
+    await notification.present();
   }
 
   ngOnInit() {

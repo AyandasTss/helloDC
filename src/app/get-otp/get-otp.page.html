@@ -31,24 +31,16 @@
       </div> -->
     </div>
     <div class="body">
-      <ion-item >
-        <ion-label>
-          <ion-icon slot="start" name="mail-outline"></ion-icon>
-        </ion-label>
-        <ion-input type="email" placeholder="hithere@example.com"></ion-input>
-      </ion-item>
-      <ion-item >
-        <ion-label>
-          <ion-icon slot="start" name="call-outline"></ion-icon>
-        </ion-label>
-        <ion-input type="email" placeholder="+91-98****10"></ion-input>
-      </ion-item> 
-      <ion-item>
-        <ion-label>Remember Me</ion-label>
-        <ion-checkbox slot="start" checked="isChecked" ></ion-checkbox>
-      </ion-item> 
-      <ion-button href="get-otp" expand="full">
-        Get OTP
+      <div class="inputField">
+        <ion-label >Email:</ion-label>
+        <ion-input inputmode="numeric" maxlength="4" minlength="0"></ion-input>
+      </div>
+      <div class="inputField">
+        <ion-label >Phone:</ion-label>
+        <ion-input inputmode="numeric" maxlength="4" minlength="0" ></ion-input>
+      </div>
+      <ion-button href="user-register" expand="full">
+        Log In
       </ion-button>
     </div>
   </div>

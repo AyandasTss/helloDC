@@ -15,6 +15,7 @@ import { CreateModalComponent } from 'src/app/create-modal/create-modal.componen
 import { CommentModalComponent } from 'src/app/comment-modal/comment-modal.component';
 import { ComplainStatusComponent } from 'src/app/complain-status/complain-status.component';
 import { PictureViewComponent } from 'src/app/picture-view/picture-view.component';
+import { NotificationsComponent } from 'src/app/notifications/notifications.component';
 // import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 @NgModule({
   imports: [
@@ -23,7 +24,7 @@ import { PictureViewComponent } from 'src/app/picture-view/picture-view.componen
     IonicModule,
     HomeUserPageRoutingModule,
   ],
-  declarations: [HomeUserPage, FeedCardComponent,CreateModalComponent, CommentModalComponent, ComplainStatusComponent,PictureViewComponent],
+  declarations: [HomeUserPage, FeedCardComponent,CreateModalComponent, CommentModalComponent, ComplainStatusComponent,PictureViewComponent,NotificationsComponent],
   providers: [
     Geolocation,
   ],

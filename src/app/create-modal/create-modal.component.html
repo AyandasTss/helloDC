@@ -38,6 +38,7 @@
             <input
               type="file"
               id="imageUpload"
+              multiple
               accept=".png, .jpg, .jpeg"
               #fileInput
               (change)="uploadFile($event)"
@@ -120,6 +121,10 @@
           <ion-icon  name="image-outline"></ion-icon>
           Photo
         </ion-button>
+        <!-- <ion-button (click)="openGalary()">
+          <ion-icon  name="image-outline"></ion-icon>
+          Photo
+        </ion-button> -->
       </ion-buttons>
       <ion-buttons  >
         <ion-button  (click)="openCamera()">

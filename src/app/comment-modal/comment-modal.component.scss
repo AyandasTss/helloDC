@@ -23,6 +23,18 @@ ion-header{
         height: 89%;
         margin-bottom: 1rem;
         overflow-y: scroll;
+        ion-list{
+            ion-item {
+                --border-color: transparent;
+                --ripple-color: transparent;
+                margin: 0.3rem auto;
+
+            }
+        }
+        
+
+
+
         .userComment{
             width: 95%;
             margin: auto;

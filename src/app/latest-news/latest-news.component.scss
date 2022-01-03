@@ -1,0 +1,17 @@
+ion-header{
+    ion-toolbar{
+        ion-button{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: var(--bd-green-dark);
+        }
+  
+        ion-buttons[slot="end"]{
+            ion-button{
+                color: var(--bd-green-light);
+                font-size: 16px;
+                font-weight:700;
+            }
+        }
+    }
+}

@@ -47,20 +47,30 @@
         <ion-label >Address 2</ion-label>
         <ion-input inputmode="numeric" minlength="0" ></ion-input>
       </div>
-      <div class="inputField">
-        <ion-label >City</ion-label>
-        <ion-input inputmode="numeric" minlength="0" ></ion-input>
-      </div>
-      <div class="inputField">
+      <div class=" dropdown">
         <ion-label >District</ion-label>
-        <ion-input inputmode="numeric" minlength="0" ></ion-input>
+        <ion-select id="dist" value="nadia" >
+          <ion-select-option value="nadia">Nadia</ion-select-option>
+          <ion-select-option value="kolkata">Kolkata</ion-select-option>
+        </ion-select>
       </div>
+      <div class=" dropdown">
+        <ion-label >City</ion-label>
+        <ion-select value="nadia" >
+          <ion-select-option value="nadia">Nadia</ion-select-option>
+          <ion-select-option value="kolkata">Kolkata</ion-select-option>
+          <ion-select-option value="hooghly">hooghly</ion-select-option>
+          <ion-select-option value="n24p">North 24 Pargana</ion-select-option>
+          <ion-select-option value="s24p">South 24 Pargana</ion-select-option>
+        </ion-select>
+      </div>
+      
       <div class="inputField">
         <ion-label >PIN Code</ion-label>
         <ion-input inputmode="numeric" minlength="0" ></ion-input>
       </div>
       <ion-button href="tabs/home" expand="full">
-        Log In
+        Register
       </ion-button>
     </div>
   </div>

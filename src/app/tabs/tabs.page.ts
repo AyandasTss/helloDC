@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { CreateModalComponent } from '../create-modal/create-modal.component';
+import { LatestNewsComponent } from '../latest-news/latest-news.component';
 
 @Component({
   selector: 'app-tabs',
@@ -17,6 +18,13 @@ export class TabsPage {
     });
 
     await modal.present();
+  }
+  async openNews(){
+    const news= await this.modalCtrl.create({
+      component: LatestNewsComponent,
+      swipeToClose:true,
+    });
+    await news.present();
   }
 
 }

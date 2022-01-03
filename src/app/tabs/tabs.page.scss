@@ -28,8 +28,16 @@ ion-tabs{
             }
         }
         ion-fab-list{
-            margin-top: 0;
-            padding-top: 0;
+            ion-fab-button{
+
+                ion-icon{
+                    font-size: 30pt;
+                    color: var(--ion-color-light);
+                    --ionicon-stroke-width: 30px;
+                    margin: 0.5rem;
+                }
+            }
         }
+        
     }
 }

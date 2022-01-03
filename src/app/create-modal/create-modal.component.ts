@@ -93,20 +93,21 @@ this.nativeGeocoder.forwardGeocode('Berlin', this.Addressoptions)
 
    //###########################GALAEY#################################///
    openGalary(){   
-    // const galaryOptions: CameraOptions = {
-    //   sourceType: this.camera.PictureSourceType.PHOTOLIBRARY,
-    //   destinationType: this.camera.DestinationType.FILE_URI,
-    //   encodingType: this.camera.EncodingType.JPEG,
-    //   mediaType: this.camera.MediaType.ALLMEDIA,
-    // }
-    //   this.camera.getPicture(galaryOptions).then((imageData) => {
-    //     console.log("Picture taken");
-    //     let base64Image = 'data:image/jpeg;base64,' + imageData;
-    //     console.log(base64Image);
-    //     }, (err) => {
-    //     // Handle error
-    //     console.log(err);
-    //     });
+    const galaryOptions: CameraOptions = {
+      sourceType: this.camera.PictureSourceType.PHOTOLIBRARY,
+      destinationType: this.camera.DestinationType.FILE_URI,
+      // encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.ALLMEDIA,
+      allowEdit: true,
+    }
+      this.camera.getPicture(galaryOptions).then((imageData) => {
+        console.log("Picture taken");
+        let base64Image = 'data:image/jpeg;base64,' + imageData;
+        console.log(base64Image);
+        }, (err) => {
+        // Handle error
+        console.log(err);
+        });
     
     }
    /*########################## File Upload ########################*/
@@ -117,9 +118,11 @@ this.nativeGeocoder.forwardGeocode('Berlin', this.Addressoptions)
  
    uploadFile(event) {
      console.log(event);
+    for (var i = 0; i < event.target.files.length; i++) { 
      let reader = new FileReader(); // HTML5 FileReader API
-     let file = event.target.files[0];
-     if (event.target.files && event.target.files[0]) {
+     let file = event.target.files[i];
+     if (event.target.files && event.target.files[i]) {
+       console.log(file);
        reader.readAsDataURL(file);
       //  console.log(reader.readAsDataURL(file));
  
@@ -138,6 +141,7 @@ this.nativeGeocoder.forwardGeocode('Berlin', this.Addressoptions)
        // ChangeDetectorRef since file is loading outside the zone
        this.cd.markForCheck();        
      }
+    }///loop for multiple selection
    }
  
    // Function to remove uploaded file
@@ -165,6 +169,18 @@ this.nativeGeocoder.forwardGeocode('Berlin', this.Addressoptions)
     //    console.log(this.registrationForm.value)
     //  }
    }
+    
+   uploadFileMultiple(e) {
+    //////3_1_2022////
+    let a : any[]= [];
+    for (var i = 0; i < e.target.files.length; i++) { 
+     a.push(e.target.files[i]);
+   }
+   console.log(a)
+
+
+    //////3_1_2022////
+  }
 
 
   closeModal(){

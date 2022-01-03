@@ -72,7 +72,7 @@ this.nativeGeocoder.forwardGeocode('Berlin', this.Addressoptions)
    openCamera(){   
     const options: CameraOptions = {
       quality: 100,
-      destinationType: this.camera.DestinationType.FILE_URI,
+      destinationType: this.camera.DestinationType.DATA_URL,
       encodingType: this.camera.EncodingType.JPEG,
       mediaType: this.camera.MediaType.ALLMEDIA,
       
@@ -141,14 +141,14 @@ this.nativeGeocoder.forwardGeocode('Berlin', this.Addressoptions)
    }
  
    // Function to remove uploaded file
-   removeUploadedFile() {
-     let newFileList = Array.from(this.el.nativeElement.files);
-     this.imageUrl = 'https://i.pinimg.com/236x/d6/27/d9/d627d9cda385317de4812a4f7bd922e9--man--iron-man.jp';
-     this.editFile = true;
-     this.removeUpload = false;
-     this.registrationForm.patchValue({
-       file: [null]
-     });
+   removeUploadedFile(removeImage) {
+    //  let newFileList = Array.from(this.el.nativeElement.files);
+    //  this.editFile = true;
+    //  this.removeUpload = false;
+    //  this.registrationForm.patchValue({
+    //    file: [null]
+    //  });
+     this.imageUrlArray.splice(this.imageUrlArray.indexOf(removeImage), 1);
    }
    
    // Submit Registration Form

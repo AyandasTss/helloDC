@@ -1,0 +1,138 @@
+{
+    "walkthrough": {
+        "Tecsa": "টেকসা",
+        "SelectYourlanguage": "আপনার ভাষা নির্বাচন করুন",
+        "English": "ইংরেজি",
+        "bengla": "বাংলা",
+        "Dontsharepassword": "পাসওয়ার্ড ভাগ করবেন না",
+        "ForgotPIN": "পিন ভুলে গেছেন?",
+        "ManageAccount": "অ্যাকাউন্ট পরিচালনা",
+        "Usestrong": "আপনার পাসওয়ার্ড তৈরি করতে অক্ষর, সংখ্যা এবং বিশেষ অক্ষরের শক্ত সংযুক্তি ব্যবহার করুন।",
+        "Donttaketoo": "পিন সম্পর্কে খুব বেশি টেনশন নেবেন না। ব্যাঙ্কে কেবল একটি কল করুন এবং আপনার পিনটি পরিবর্তন করুন।",
+        "Bankaccountmake": "ব্যাংক অ্যাকাউন্ট লেনদেনকে সচল রাখতে এবং নিয়মিত পাসওয়ার্ড পরিবর্তন করতে আরও সুরক্ষিত করে।",
+        "GetStarted": "এবার শুরু করা যাক"
+    },
+    "dashboard": {
+        "Balance": "ব্যালেন্স",
+        "Highlight": "হাইলাইট",
+        "Offer": "অফার",
+        "RecentTransactions": "সাম্প্রতিক লেনদেন",
+        "Dashboard": "Dashboard",
+        "QuickAccess": "ড্যাশবোর্ড",
+        "Account": "হিসাব",
+        "Diposit": "ডিপোজিট",
+        "Loan": "ঋণ",
+        "Statment": "বিবৃতি",
+        "ViewAll": "সব দেখ",
+        "Hello": "হ্যালো!",
+        "youraccount": "আপনার অ্যাকাউন্ট",
+        "Repayment": "ঋণ পরিশোধ"
+
+    },
+    "scanQR": {
+        "Payments": "অর্থ প্রদান",
+        "ScantoPay": "প্রদানের জন্য স্ক্যান করুন",
+        "Send": "পাঠান",
+        "Receive": "প্রাপ্তি",
+        "Make": "পেমেন্ট",
+        "Payment": "করুন",
+        "MakePayment": "পেমেন্ট করুন",
+        "Pay": "প্রদান",
+        "scan": "স্ক্যান",
+        "WelcometoTecsaFinance": "টেকসা ফিনান্সে আপনাকে স্বাগতম",
+        "mts": "অর্থ স্থানান্তর সফল",
+        "Success": "সাফল্য",
+        "done": "সম্পন্ন",
+        "ReferenceNumber": "পরিচিত সংখ্যা",
+        "PaymentDate": "টাকা প্রদানের তারিখ",
+        "description": "বর্ণনা",
+        "refresh": "রিফ্রেশ",
+        "amount": "পরিমাণ",
+        "enteramount": "পরিমান লিখুন",
+        "scanforreceivemoney": "অর্থ গ্রহণের জন্য স্ক্যান করুন"
+
+
+
+    },
+    "profile": {
+        "Profile": "প্রোফাইল",
+        "Balance": "ব্যাংক ব্যালেন্স",
+        "PersonalInformations": "ব্যক্তিগত তথ্য",
+        "Address": "ঠিকানা",
+        "Email": "ইমেল",
+        "Phone": "ফোন",
+        "ResetPIN": "পিনটি পুনরায় সেট করুন",
+        "Select": "নির্বাচন করুন",
+        "Bengali": "বাংলা",
+        "English": "ইংরেজি",
+        "ResettourPIN": "আপনার 6 ডিজিটের পিনটি পুনরায় সেট করুন"
+    },
+    "AccountPage": {
+        "TransactionHistory": "লেনদেনের ইতিহাস",
+        "YourCurrentBalance": "আপনার বর্তমান ব্যালেন্সটি হ'ল ",
+        "PostingDate": "পোস্টিং তারিখ",
+        "DocumentNo": "ডকুমেন্ট নং",
+        "Choosedate": "তারিখ চয়ন করুন",
+        "Amount": "পরিমাণ",
+        "SeeMore": "আরো দেখুন",
+        "Credit": "জমা",
+        "Debit": "খরচ"
+    },
+    "LoanPage": {
+        "LoanTransactionHistory": "ঋণ লেনদেন ইতিহাস",
+        "PostingDate": "পোস্টিং তারিখ",
+        "DocumentNo": "ডকুমেন্ট নং",
+        "Choosedate": "তারিখ চয়ন করুন",
+        "Amount": "পরিমাণ",
+        "LoanID": "ঋণ আইডি",
+        "Name": "নাম"
+
+    },
+    "StatmentPage": {
+        "AccountStatment": "অ্যাকাউন্ট বিবৃতি",
+        "PostingDate": "পোস্টিং তারিখ",
+        "DocumentNo": "ডকুমেন্ট নং",
+        "Choosedate": "তারিখ চয়ন করুন",
+        "Amount": "পরিমাণ",
+        "ClicktoDownload": "ডাউনলোড করতে ক্লিক করুন"
+    },
+    "TransactionsPage": {
+        "Transactions": "লেনদেন",
+        "SeeMore": "আরো দেখুন"
+    },
+    "LoginPage": {
+        "Welcometo": "আপনাকে স্বাগতম ",
+        "TecsaFinance": "টেকসা ফিনান্সে",
+        "WelcometoTecsaFinance": "টেকসা ফিনান্সে আপনাকে স্বাগতম",
+        "SubmitOTP": "ওটিপি জমা দিন",
+        "GetOTP": "ওটিপি পান",
+        "ConfirmPasswordnotmached": "নিশ্চিত করুন পাসওয়ার্ড মেলে না",
+        "SignUp": "নিবন্ধন করুন",
+        "ForgotYourPIN?": "আপনার পিন ভুলে গেছেন?",
+        "FollowMe": "আমাকে অনুসরণ কর",
+        "SubmitPIN": "পিন জমা দিন",
+        "CustomerID": "গ্রাহক আইডি",
+        "PhoneNumber": "ফোন নম্বর",
+        "EnterPasswordhere": "এখানে পাসওয়ার্ড লিখুন",
+        "EnterConfirmPasswordhere": "এখানে পাসওয়ার্ড নিশ্চিত করুন"
+
+    },
+    "NotificationsPage": {
+        "Notifications": "বিজ্ঞপ্তি",
+        "notify": "বিজ্ঞপ্তি",
+        "YourAccountHasBeenCredited": "আপনার অ্যাকাউন্টে জমা হয়েছে ",
+        "YourAccountHasBeenDebited": "আপনার অ্যাকাউন্টে ডেবিট করা হয়েছে ",
+        "OnThis": "এই তারিখে: ",
+        "By": "দ্বারা: "
+    },
+    "DepositPage": {
+        "DepositHistory": "জমা ইতিহাস",
+        "YourCurrentBalance": "আপনার বর্তমান ব্যালেন্সটি হ'ল ",
+        "SeeMore": "আরো দেখুন"
+    },
+    "pin":{
+        "EnterNewPin": "নতুন পিন প্রবেশ করুন",
+        "EnterPin": "পিন প্রবেশ করুন",
+        "ConfirmPin": "পিন নিশ্চিত করুন"
+    }
+}

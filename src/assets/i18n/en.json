@@ -1,0 +1,136 @@
+{
+    "walkthrough": {
+        "Tecsa": "TECSA",
+        "SelectYourlanguage": "Select Your language",
+        "English": "English",
+        "bengla": "বাংলা",
+        "Dontsharepassword": "Don't share password",
+        "ForgotPIN": "Forgot PIN?",
+        "ManageAccount": "Manage Account",
+        "Usestrong": "Use strong combonations of letters, numbers and special characters to make your password.",
+        "Donttaketoo": "Don't take too much tension about PIN. Just make one call to bank and change your pin.",
+        "Bankaccountmake": "Bank account make more secure keeping transaction active and changing password regularly.",
+        "GetStarted": "Get Started"
+    },
+    "dashboard": {
+        "Balance": "Balance",
+        "Highlight": "Highlight",
+        "Offer": "Offer",
+        "RecentTransactions": "Recent Transactions",
+        "Dashboard": "Dashboard",
+        "QuickAccess": "Quick Access",
+        "Account": "Account",
+        "Diposit": "Diposit",
+        "Loan": "Loan",
+        "Statment": "Statment",
+        "ViewAll": "View All",
+        "Hello": "Hello!",
+        "youraccount": "Your account",
+        "Repayment": "Repayment"
+
+    },
+    "scanQR": {
+        "Payments": "Payments",
+        "ScantoPay": "Scan to Pay",
+        "Send": "Send",
+        "Receive": "Receive",
+        "Make": "Make",
+        "Payment": "Payment",
+        "MakePayment": "Make Payment",
+        "Pay": "Pay",
+        "scan": "Scan",
+        "WelcometoTecsaFinance": "Welcome to Tecsa Finance",
+        "mts": "Money Transfer Successful",
+        "Success": "Success",
+        "done": "Done",
+        "ReferenceNumber": "Ref. Number",
+        "PaymentDate": "Payment Date",
+        "description": "Description",
+        "refresh": "refresh",
+        "amount": "Amount",
+        "enteramount": "Enter Amount",
+        "scanforreceivemoney": "scan for receive money"
+
+
+    },
+    "profile": {
+        "Profile": "Profile",
+        "Balance": "Balance",
+        "PersonalInformations": "Personal Informations",
+        "Address": "Address",
+        "Email": "Email",
+        "Phone": "Phone",
+        "ResetPIN": "Reset PIN",
+        "Select": "Select",
+        "Bengali": "Bengali",
+        "English": "English",
+        "ResettourPIN": "Reset Your 6 digit PIN"
+    },
+    "AccountPage": {
+        "TransactionHistory": "Transaction History",
+        "YourCurrentBalance": "Your current balance is ",
+        "PostingDate": "Posting Date",
+        "DocumentNo": "Document No",
+        "Choosedate": "Choose date",
+        "Amount": "Amount",
+        "SeeMore": "See More",
+        "Credit": "Credit",
+        "Debit": "Debit"
+    },
+    "LoanPage": {
+        "LoanTransactionHistory": "Loan Transaction History",
+        "PostingDate": "Posting Date",
+        "DocumentNo": "Document No",
+        "Choosedate": "Choose date",
+        "Amount": "Amount",
+        "LoanID": "Loan ID",
+        "Name": "Name"
+    },
+    "StatmentPage": {
+        "AccountStatment": "Account Statment",
+        "PostingDate": "Posting Date",
+        "DocumentNo": "Document No",
+        "Choosedate": "Choose date",
+        "Amount": "Amount",
+        "ClicktoDownload": "Click to download Loan Transaction History"
+    },
+    "TransactionsPage": {
+        "Transactions": "Transactions",
+        "SeeMore": "See More"
+    },
+    "LoginPage": {
+        "Welcometo": "Welcome to ",
+        "TecsaFinance": "Tecsa Finance",
+        "WelcometoTecsaFinance": "Welcome to Tecsa Finance",
+        "SubmitOTP": "Submit OTP",
+        "GetOTP": "Get OTP",
+        "ConfirmPasswordnotmached": "Confirm Password not mached",
+        "SignUp": "Sign Up",
+        "ForgotYourPIN?": "Forgot Your PIN?",
+        "FollowMe": "Follow Me",
+        "SubmitPIN": "Submit PIN",
+        "CustomerID": "Customer ID",
+        "PhoneNumber": "Phone Number",
+        "EnterPasswordhere": "Enter Password here",
+        "EnterConfirmPasswordhere": "Enter Confirm Password here"
+
+    },
+    "NotificationsPage": {
+        "Notifications": "Notifications",
+        "notify": "Notify",
+        "YourAccountHasBeenCredited": "Your account has been credited ",
+        "YourAccountHasBeenDebited": "Your account has been debited ",
+        "OnThis": "on this date: ",
+        "By": "by "
+    },
+    "DepositPage": {
+        "DepositHistory": "Deposit History",
+        "YourCurrentBalance": "Your current balance is ",
+        "SeeMore": "See More"
+    },
+    "pin":{
+        "EnterNewPin": "Enter New Pin",
+        "EnterPin": "Enter Pin",
+        "ConfirmPin": "Confirm Pin"
+    }
+}

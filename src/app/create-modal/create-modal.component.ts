@@ -1,6 +1,6 @@
-import { Component, ChangeDetectorRef, ElementRef, ViewChild,  OnInit} from '@angular/core';
+import { Component, ChangeDetectorRef, ElementRef, ViewChild,  OnInit, Input} from '@angular/core';
 import { FormBuilder,FormGroup, FormArray, Validators } from "@angular/forms";
-import { ModalController } from '@ionic/angular';
+import { ModalController, NavParams } from '@ionic/angular';
 import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
 import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
 import { NativeGeocoder, NativeGeocoderOptions, NativeGeocoderResult } from '@ionic-native/native-geocoder/ngx';
@@ -11,6 +11,7 @@ import { NativeKeyboard } from '@awesome-cordova-plugins/native-keyboard/ngx';
   styleUrls: ['./create-modal.component.scss'],
 })
 export class CreateModalComponent implements OnInit{
+  @Input() title: string;
 
   private todo : FormGroup;
   private registrationForm : FormGroup;
@@ -26,12 +27,17 @@ export class CreateModalComponent implements OnInit{
       private geolocation: Geolocation,
       private nativeGeocoder: NativeGeocoder,
       private cd: ChangeDetectorRef,
-      private nativeKeyboard: NativeKeyboard
+      private nativeKeyboard: NativeKeyboard,
+      private navParams: NavParams, 
       ) {
       /*##################### Registration Form #####################*/
   this.registrationForm = this.formBuilder.group({
     file: [null]
   })  
+
+  this.title = this.navParams.get('title');
+  // this.list = this.navParams.get('item_id');
+  console.log(this.title);
   }
 //##############################geoLocation########################////
 Locationoptions = {

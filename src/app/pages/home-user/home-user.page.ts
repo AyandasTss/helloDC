@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ModalController } from '@ionic/angular';
+import { TranslateService } from '@ngx-translate/core';
 import { CommentModalComponent } from 'src/app/comment-modal/comment-modal.component';
 import { ComplainStatusComponent } from 'src/app/complain-status/complain-status.component';
 import { CreateModalComponent } from 'src/app/create-modal/create-modal.component';
@@ -42,13 +43,24 @@ export class HomeUserPage implements OnInit {
     },
   ]
 
-  constructor( private modalCtrl:ModalController) { }
+  constructor( 
+    private modalCtrl:ModalController,
+    private translate: TranslateService,
+    ) {
+    this.translate.setDefaultLang('bn');
+   }
 
   async openModal(){
     const modal= await this.modalCtrl.create({
       component: CreateModalComponent,
-      componentProps: {
-        postCardArr: this.postCard
+      componentProps:
+      {
+        title: 'Water Issue',
+        date: '12-Apr-2021',
+        userimg:'https://pbs.twimg.com/profile_images/1441042657258590217/HISn_-IH_400x400.jpg',
+        details: 'Badges are inline block elements that usually appear near another element. Typically they contain a number or other characters.',
+        imgUrl: 'https://www.financialexpress.com/wp-content/uploads/2021/04/drinking-water-survey.jpg',
+  
       }
     });
 

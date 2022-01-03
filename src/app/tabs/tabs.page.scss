@@ -18,6 +18,7 @@ ion-tabs{
     ion-fab{
         margin-bottom: 4rem;
         margin-right: 1rem;
+
         ion-fab-button{
             --background: var(--bd-green);
             color: var(--ion-color-light);
@@ -25,6 +26,10 @@ ion-tabs{
                 font-size: 40px;
                 --ionicon-stroke-width: 40px;
             }
+        }
+        ion-fab-list{
+            margin-top: 0;
+            padding-top: 0;
         }
     }
 }

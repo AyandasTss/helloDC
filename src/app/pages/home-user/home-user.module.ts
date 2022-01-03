@@ -16,6 +16,7 @@ import { CommentModalComponent } from 'src/app/comment-modal/comment-modal.compo
 import { ComplainStatusComponent } from 'src/app/complain-status/complain-status.component';
 import { PictureViewComponent } from 'src/app/picture-view/picture-view.component';
 import { NotificationsComponent } from 'src/app/notifications/notifications.component';
+import { TranslateModule } from '@ngx-translate/core';
 // import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { NotificationsComponent } from 'src/app/notifications/notifications.comp
     FormsModule,
     IonicModule,
     HomeUserPageRoutingModule,
+    TranslateModule,
   ],
   declarations: [HomeUserPage, FeedCardComponent,CreateModalComponent, CommentModalComponent, ComplainStatusComponent,PictureViewComponent,NotificationsComponent],
   providers: [

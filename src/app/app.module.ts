@@ -15,10 +15,31 @@ import { NativeKeyboard } from '@awesome-cordova-plugins/native-keyboard/ngx';
 import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
 import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 import { CommonModule } from '@angular/common';
+
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+export function HttpLoaderFactory(http: HttpClient) {
+return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
+}
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule,CommonModule, IonicModule.forRoot(), AppRoutingModule,ReactiveFormsModule,FormsModule],
+  imports: [HttpClientModule,
+    BrowserModule,CommonModule,
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
+  ],
   providers: [
     Camera,
     Geolocation,
